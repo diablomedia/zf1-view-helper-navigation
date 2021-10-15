@@ -44,7 +44,7 @@
         "phpunit/phpunit": "^8.0",
         "phpstan/phpstan": "0.12.99",
         "friendsofphp/php-cs-fixer": "3.2.1",
-        "maglnet/composer-require-checker": "^1.1.0 || ^2.0.0",
+        "maglnet/composer-require-checker": "^1.1.0 || ^2.0.0 || ^3.3.0",
         "phpro/grumphp-shim": "^1.5"
     },
     "archive": {
