@@ -22,6 +22,12 @@ jobs:
                     - operating-system: ubuntu-latest
                       php-versions: '8.0'
                       composer-args: '--prefer-lowest --ignore-platform-reqs --no-scripts'
+                    - operating-system: ubuntu-latest
+                      php-versions: '8.1'
+                      composer-args: '--ignore-platform-reqs --no-scripts'
+                    - operating-system: ubuntu-latest
+                      php-versions: '8.1'
+                      composer-args: '--prefer-lowest --ignore-platform-reqs --no-scripts'
         runs-on: ${{ matrix.operating-system }}
         steps:
             - name: Checkout
