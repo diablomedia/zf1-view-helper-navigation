@@ -19,7 +19,7 @@
         "diablomedia/zendframework1-registry": "^1.0.5",
         "diablomedia/zendframework1-translate": "^1.0.5",
         "diablomedia/zendframework1-uri": "dev-php-84 as 1.0.5",
-        "diablomedia/zendframework1-validate-sitemap": "^1.0.4",
+        "diablomedia/zendframework1-validate-sitemap": "dev-php-84 as 1.0.4",
         "diablomedia/zendframework1-view": "dev-php-84 as 1.0.5",
         "diablomedia/zendframework1-view-helper-url": "dev-php-84 as 1.0.4",
         "diablomedia/zendframework1-view-helper-partial": "dev-php-84 as 1.0.5"
