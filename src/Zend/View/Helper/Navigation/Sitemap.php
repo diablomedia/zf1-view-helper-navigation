@@ -84,7 +84,7 @@ class Zend_View_Helper_Navigation_Sitemap extends Zend_View_Helper_Navigation_He
      * @return Zend_View_Helper_Navigation_Sitemap   fluent interface, returns
      *                                               self
      */
-    public function sitemap(Zend_Navigation_Container $container = null)
+    public function sitemap(?Zend_Navigation_Container $container = null)
     {
         if (null !== $container) {
             $this->setContainer($container);
@@ -281,7 +281,7 @@ class Zend_View_Helper_Navigation_Sitemap extends Zend_View_Helper_Navigation_He
      *                                               validators are used and the
      *                                               loc element fails validation
      */
-    public function getDomSitemap(Zend_Navigation_Container $container = null)
+    public function getDomSitemap(?Zend_Navigation_Container $container = null)
     {
         if (null === $container) {
             $container = $this->getContainer();
@@ -434,7 +434,7 @@ class Zend_View_Helper_Navigation_Sitemap extends Zend_View_Helper_Navigation_He
      *                                               registered in the helper.
      * @return string                                helper output
      */
-    public function render(Zend_Navigation_Container $container = null)
+    public function render(?Zend_Navigation_Container $container = null)
     {
         $dom = $this->getDomSitemap($container);
 
