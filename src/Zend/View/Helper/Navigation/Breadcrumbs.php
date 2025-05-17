@@ -68,7 +68,7 @@ class Zend_View_Helper_Navigation_Breadcrumbs extends Zend_View_Helper_Navigatio
      * @return $this                                    fluent interface,
      *                                                  returns self
      */
-    public function breadcrumbs(Zend_Navigation_Container $container = null)
+    public function breadcrumbs(?Zend_Navigation_Container $container = null)
     {
         if (null !== $container) {
             $this->setContainer($container);
@@ -174,7 +174,7 @@ class Zend_View_Helper_Navigation_Breadcrumbs extends Zend_View_Helper_Navigatio
      *                                               registered in the helper.
      * @return string                                helper output
      */
-    public function renderStraight(Zend_Navigation_Container $container = null)
+    public function renderStraight(?Zend_Navigation_Container $container = null)
     {
         if (null === $container) {
             $container = $this->getContainer();
@@ -242,7 +242,7 @@ class Zend_View_Helper_Navigation_Breadcrumbs extends Zend_View_Helper_Navigatio
      * @return string                                helper output
      */
     public function renderPartial(
-        Zend_Navigation_Container $container = null,
+        ?Zend_Navigation_Container $container = null,
         $partial = null
     ) {
         if (null === $container) {
@@ -313,7 +313,7 @@ class Zend_View_Helper_Navigation_Breadcrumbs extends Zend_View_Helper_Navigatio
      *                                               registered in the helper.
      * @return string                                helper output
      */
-    public function render(Zend_Navigation_Container $container = null)
+    public function render(?Zend_Navigation_Container $container = null)
     {
         if ($partial = $this->getPartial()) {
             return $this->renderPartial($container, $partial);
